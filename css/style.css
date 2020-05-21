@@ -1,0 +1,213 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* Variables */
+:root {
+  --color-red: hsl(0, 100%, 74%);
+  --color-green: hsl(154, 59%, 51%);
+  --color-blue: hsl(248, 32%, 49%);
+  --color-dark-blue: hsl(249, 10%, 26%);
+  --color-grayish-blue: hsl(246, 25%, 77%);
+
+  --font-family-normal: 'Poppins', sans-serif;
+  --font-size-normal: 16px;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+}
+
+/* CSS Reset */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: var(--font-family-normal);
+  font-size: var(--font-size-normal);
+  font-weight: var(--font-weight-normal);
+}
+
+body {
+  min-height: 100vh;
+  background-image: url('../img/bg-intro-mobile.png');
+  background-color: var(--color-red);
+}
+
+main {
+  min-height: 100vh;
+  width: 95%;
+  margin: 0px auto;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.fm-intro {
+  padding: 48px 0px;
+  text-align: center;
+  color: white;
+}
+
+.fm-intro h1 {
+  padding: 32px 0px;
+  font-size: 1.7em;
+  font-weight: var(--font-weight-bold);
+  line-height: 1.3em;
+}
+
+.fm-intro p {
+  font-weight: var(--font-weight-medium);
+}
+
+.fm-signup {
+  padding: 8px 0px;
+}
+
+.fm-signup .fm-try-it-free {
+  padding: 12px 0px;
+  color: white;
+  background-color: var(--color-blue);
+  border-radius: 8px;
+  box-shadow: 0px 8px 2px rgba(0, 0, 0, 0.2);
+}
+
+.fm-signup .fm-try-it-free p {
+  width: 60%;
+  margin: 0px auto;
+  text-align: center;
+}
+
+.fm-signup .fm-try-it-free p strong {
+  font-weight: var(--font-weight-semibold);
+}
+
+.fm-signup .fm-signup-form {
+  margin: 24px 0px;
+  padding: 24px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 6px 2px rgba(0, 0, 0, 0.2);
+}
+
+.fm-signup .fm-signup-form .fm-signup-input-element {
+  margin-bottom: 16px;
+}
+
+.fm-signup .fm-signup-form .fm-signup-input-element input {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  font-weight: var(--font-weight-semibold);
+  border: 1px solid var(--color-grayish-blue);
+  border-radius: 4px;
+}
+
+.fm-signup .fm-signup-form .fm-signup-input-element input:focus {
+  outline: 0;
+}
+
+.fm-signup .fm-signup-form .fm-signup-input-element.error input {
+  background-image: url('../img/icon-error.svg');
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  border-color: var(--color-red);
+  color: var(--color-red);
+}
+
+.fm-signup .fm-signup-form .fm-signup-input-element .fm-signup-input-error {
+  visibility: hidden;
+  opacity: 0;
+
+  padding-top: 2px;
+  font-size: 0.75em;
+  font-style: italic;
+  text-align: center;
+  color: var(--color-red);
+}
+
+.fm-signup .fm-signup-form .fm-signup-input-element.error .fm-signup-input-error {
+  visibility: visible;
+  opacity: 1;
+}
+
+.fm-signup .fm-signup-form button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  font-weight: var(--font-weight-semibold);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: white;
+  background-color: var(--color-green);
+  border: none;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.fm-signup .fm-signup-form button:hover {
+  cursor: pointer;
+}
+
+.fm-signup .fm-signup-form button:focus {
+  outline: 0;
+}
+
+.fm-signup .fm-signup-disclaimer {
+  font-size: 0.8em;
+  font-weight: var(--font-weight-medium);
+  color: var(--color-grayish-blue);
+  text-align: center;
+  line-height: 2em;
+}
+
+.fm-signup .fm-signup-disclaimer a {
+  font-size: inherit;
+  font-weight: var(--font-weight-bold);
+  color: var(--color-red);
+  text-decoration: none;
+}
+
+.fm-signup .fm-signup-disclaimer a:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 800px) {
+  main {
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+    margin: 0px auto;
+  }
+
+  .fm-intro {
+    width: 50%;
+    margin: 32px 0px;
+    padding-right: 12px;
+    text-align: left;
+  }
+
+  .fm-intro h1 {
+    font-size: 1.85em;
+  }
+
+  .fm-signup {
+    width: 50%;
+    margin: 32px 0px;
+    padding-left: 12px;
+  }
+
+  .fm-signup .fm-try-it-free p {
+    width: 100%;
+  }
+
+  .fm-signup .fm-signup-form .fm-signup-input-element .fm-signup-input-error {
+    text-align: right;
+  }
+}
+
+@media (min-width: 1000px) {
+  main {
+    width: 75%;
+  }
+}

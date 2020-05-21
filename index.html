@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="favicon" type="image/png" href="./img/favicon-32x32.png">
+  <title>Intro Component With Signup Form</title>
+</head>
+<body>
+  <main>
+    <div class="fm-intro">
+      <h1>
+        Learn to code by watching others
+      </h1>
+      <p>
+        See how experienced developers solve problems in real-time.
+        Watching scripted tutorials is great, but understanding how
+        developers think is invaluable.
+      </p>
+    </div>
+    <div class="fm-signup">
+      <div class="fm-try-it-free">
+        <p>
+          <strong>Try it free 7 days</strong>, then
+          $20/mo. thereafter.
+        </p>
+      </div>
+      <form class="fm-signup-form" id="signup-form">
+        <div class="fm-signup-input-element" id="first-name-element">
+          <input
+            type="text"
+            name="first-name"
+            id="first-name"
+            placeholder="First Name"
+          />
+          <p class="fm-signup-input-error" id="first-name-error"></p>
+        </div>
+        <div class="fm-signup-input-element" id="last-name-element">
+          <input
+            type="text"
+            name="last-name"
+            id="last-name"
+            placeholder="Last Name"
+          />
+          <p class="fm-signup-input-error" id="last-name-error"></p>
+        </div>
+        <div class="fm-signup-input-element" id="email-address-element">
+          <input
+            type="email"
+            name="email-address"
+            id="email-address"
+            placeholder="Email Address"
+          />
+          <p class="fm-signup-input-error" id="email-address-error"></p>
+        </div>
+        <div class="fm-signup-input-element" id="password-element">
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Password"
+          />
+          <p class="fm-signup-input-error" id="password-error"></p>
+        </div>
+        <div class="fm-signup-input-element" id="confirm-password-element">
+          <input
+            type="password"
+            name="confirm-password"
+            id="confirm-password"
+            placeholder="Confirm Password"
+          />
+          <p class="fm-signup-input-error" id="confirm-password-error"></p>
+        </div>
+        <button type="submit" id="submit-button">
+          Claim Your Free Trial
+        </button>
+        <p class="fm-signup-disclaimer">
+          By clicking the button, you are agreeing to our
+          <a href="#">Terms and Services</a>.
+        </p>
+      </form>
+    </div>
+  </main>
+  <script src="./js/script.js"></script>
+</body>
+</html>
